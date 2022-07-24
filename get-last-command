@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const dorita980 = require('dorita980');
+
+const blid = process.argv[2];
+const password = process.argv[3];
+const ip = process.argv[4];
+
+const robot = new dorita980.Local(blid, password, ip);
+
+robot.getRobotState(['lastCommand']).then(state => {
+  console.log(JSON.stringify(state.lastCommand, null, 2));
+  process.exit(0);
+});

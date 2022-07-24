@@ -1,0 +1,7 @@
+{
+  "name": "irobot-tools",
+  "description": "Handy scripts to help integrate Roomba vacuums with smart home systems",
+  "dependencies": {
+    "dorita980": "^3.1.11"
+  }
+}
